@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://corevisioninfotech.github.io/website",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite", 
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
