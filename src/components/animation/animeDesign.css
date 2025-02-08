@@ -1,0 +1,14 @@
+.animated-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff; /* Dark background */
+    color: white;
+  }
+  
+  .animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 0; /* Hidden initially */
+  }
+  

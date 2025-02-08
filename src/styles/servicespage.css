@@ -1,0 +1,37 @@
+.service-container {
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #e5e5f7;
+    background: linear-gradient(to bottom, #ffffff, #e5effa);  
+  }
+  
+  .service-container .content {
+    text-align: center;
+    opacity: 1;
+    transform: translateY(0);
+    color: black;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .service-container .headline {
+    font-size: 50px;
+    color: #1f2937;
+    font-family: "Yantramanav", serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    /* border: 2px solid #1f2937; */
+    margin-bottom: -10px !important;
+  }
+  
+  .service-container .description {
+    font-size: 16px;
+    color: #565656;
+    margin: 20px 0;
+    width: 600px;
+  }
+  

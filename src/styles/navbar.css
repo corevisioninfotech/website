@@ -1,0 +1,164 @@
+/* General Navbar Styling */
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: white; 
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  } */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar.shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+
+  /* Logo Styling */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    /* border: 2px solid black; */
+  }
+
+  .logo img{
+    width: 200px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover Effect - Underline Animation */
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00A2FF; /* Light Blue */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    color: #00A2FF; /* Light Blue */
+  }
+  
+  /* Button Styling */
+  .nav-btn {
+    padding: 8px 20px;
+    background-color: #00A2FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #0e41fa; /* Darker Blue */
+  }  
+
+
+ /* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn:focus {
+  outline: none;
+}
+
+.dropdown-btn::after {
+  content: '\25BC';
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* .dropdown-btn:hover::after{
+  content: '\25B2';
+} */
+
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0;
+  /* min-width: 350px; */
+  z-index: 999;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 250px;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: left;
+}
+
+
+  /* .dropdown-menu li:hover {
+    background: #cce8f7;
+  } */
